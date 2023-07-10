@@ -1,0 +1,27 @@
+//Vibrato for solo instrument and center voice in trio
+lfo01_pitch_oncc21=69 //Vibrato LFO gets very wide
+lfo01_freq=1 //Any slower than this sounds really lousy
+lfo01_freq_oncc112=5.5 //Can't go too fast to encourage wider
+lfo01_delay_oncc115=0.380
+lfo01_fade_oncc116=0.420
+//This LFO also does tremolo
+lfo01_volume_oncc21=1.8 //Not much - just a subtle effect on volume
+eq1_freq=2300 //EQ band for vibrato
+eq1_bw=2
+lfo01_eq1gain_oncc21=2 //Again, pretty subtle
+
+lfo02_wave=1 //Second LFO to make things wobblier
+lfo02_phase=0
+lfo02_phase_oncc131=0.783 //Phase affected by velocity, to pseudo-randomize while keeping both mics' LFOs in sync
+lfo02_freq=0.01 //Basically no movement at very slow speeds, just randomization
+lfo02_freq_oncc117=1.02 //Max rate is not very high, so it doesn't sound too obvious
+lfo02_pitch_oncc117=-6 //Slight pitch wobbliness
+lfo02_freq_lfo01_oncc117=0.21 lfo02_freq_lfo01_oncc112=0.79 //Affect the rate of the other LFO for unsteady vibrato
+
+lfo03_wave=1 //And a third LFO for secondhand complex wobbliness
+lfo03_phase=0.438
+lfo03_phase_oncc131=0.334 //Different phase response to velocity than the second LFO
+lfo03_freq=0.53
+lfo03_freq_oncc117=-0.51
+lfo03_freq_lfo02_oncc117=1.17
+lfo03_pitch_oncc117=-5

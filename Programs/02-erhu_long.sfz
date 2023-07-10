@@ -1,0 +1,154 @@
+<control>
+label_cc1=Dynamics
+label_cc21=Vibrato Depth
+label_cc31=Width
+label_cc34=Octave
+label_cc100=Unison Vol
+label_cc101=Unison Width
+label_cc105=Mono Switch
+label_cc112=Vibrato Speed
+label_cc115=Vibrato Delay
+label_cc116=Vibrato Fade
+label_cc117=Humanize
+
+set_cc1=100
+set_cc31=127
+set_cc101=100
+set_cc112=50
+set_cc115=45
+set_cc116=45
+set_cc117=32
+
+<global>
+#include "modules/controls/common.sfz"
+#include "modules/controls/erhu_vibrato.sfz"
+
+//Center voice
+//Mono
+
+<master>
+locc105=64
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=first
+#include "modules/maps/erhu_sus_map.sfz"
+<master>
+locc105=64
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=legato
+offset=15000
+ampeg_attack=0.2
+#include "modules/maps/erhu_sus_map.sfz"
+
+
+
+
+
+
+
+//Poly
+
+<master>
+hicc105=63
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/erhu_sus_map.sfz"
+
+//Mono
+
+<master>
+locc105=64
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=first
+#include "modules/maps/t1/erhu_sus_map.sfz"
+<master>
+locc105=64
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=legato
+offset=15000
+ampeg_attack=0.2
+#include "modules/maps/t1/erhu_sus_map.sfz"
+
+
+
+
+
+
+//Poly
+
+<master>
+hicc105=63
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t1/erhu_sus_map.sfz"
+
+
+
+//Right voice
+
+<global>
+#include "modules/controls/common.sfz"
+amplitude_oncc100=100
+locc100=1
+pan_oncc101=100
+#include "modules/controls/erhu_t2_vibrato.sfz"
+
+//Mono
+
+<master>
+locc105=64
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=first
+#include "modules/maps/t2/erhu_sus_map.sfz"
+<master>
+locc105=64
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=legato
+offset=15000
+ampeg_attack=0.2
+#include "modules/maps/t2/erhu_sus_map.sfz"
+
+
+
+
+
+//Poly
+
+<master>
+hicc105=63
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t2/erhu_sus_map.sfz"
+
+
+
+
+
+//Curves
+#include "modules/controls/curves.sfz"

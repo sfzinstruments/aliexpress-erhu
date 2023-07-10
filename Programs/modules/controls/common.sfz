@@ -1,0 +1,11 @@
+ampeg_release=0.25
+ampeg_attack=0.01
+off_mode=time
+off_time=0.25
+bend_up=1200
+bend_down=-1200
+bend_smooth=40
+width=0
+width_oncc31=100
+tune_oncc34=-2400
+tune_curvecc34=16

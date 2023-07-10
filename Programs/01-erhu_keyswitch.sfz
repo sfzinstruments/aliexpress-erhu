@@ -1,0 +1,451 @@
+<control>
+label_cc1=Dynamics
+label_cc21=Vibrato Depth
+label_cc31=Width
+label_cc34=Octave
+label_cc100=Unison Vol
+label_cc101=Unison Width
+label_cc105=Mono Switch
+label_cc112=Vibrato Speed
+label_cc115=Vibrato Delay
+label_cc116=Vibrato Fade
+label_cc117=Humanize
+
+set_cc1=100
+set_cc31=127
+set_cc101=100
+set_cc112=50
+set_cc115=45
+set_cc116=45
+set_cc117=32
+
+<global>
+#include "modules/controls/common.sfz"
+sw_lokey=45
+sw_hikey=48
+sw_default=48
+#include "modules/controls/erhu_vibrato.sfz"
+
+//Center voice
+//Mono
+
+<master>
+locc105=64
+sw_last=48
+sw_label=Long
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=first
+#include "modules/maps/erhu_sus_map.sfz"
+<master>
+locc105=64
+sw_last=48
+sw_label=Long
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=legato
+offset=15000
+ampeg_attack=0.2
+#include "modules/maps/erhu_sus_map.sfz"
+
+
+<master>
+locc105=64
+sw_last=47
+sw_label=Short
+group=11
+off_by=11
+#include "modules/maps/erhu_stac_map.sfz"
+
+<master>
+locc105=64
+sw_last=46
+sw_label=Marcato
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/erhu_sus_map.sfz"
+<master>
+locc105=64
+sw_last=46
+sw_label=Marcato
+group=12
+off_by=12
+ampeg_hold=0.2
+ampeg_decay=0.3
+ampeg_sustain=0
+#include "modules/maps/erhu_stac_map.sfz"
+
+<master>
+locc105=64
+sw_last=45
+sw_label=Sul tasto
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+trigger=first
+#include "modules/maps/erhu_st_map.sfz"
+<master>
+locc105=64
+sw_last=45
+sw_label=Sul tasto
+group=11
+off_by=11
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+trigger=legato
+offset=10000
+ampeg_attack=0.25
+#include "modules/maps/erhu_st_map.sfz"
+
+
+
+
+//Poly
+
+<master>
+hicc105=63
+sw_last=48
+sw_label=Long
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/erhu_sus_map.sfz"
+
+
+<master>
+hicc105=63
+sw_last=47
+sw_label=Short
+#include "modules/maps/erhu_stac_map.sfz"
+
+<master>
+hicc105=63
+sw_last=46
+sw_label=Marcato
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/erhu_sus_map.sfz"
+<master>
+hicc105=63
+sw_last=46
+sw_label=Marcato
+ampeg_hold=0.2
+ampeg_decay=0.3
+ampeg_sustain=0
+#include "modules/maps/erhu_stac_map.sfz"
+
+<master>
+hicc105=63
+sw_last=45
+sw_label=Sul tasto
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+#include "modules/maps/erhu_st_map.sfz"
+
+<global>
+#include "modules/controls/common.sfz"
+sw_lokey=45
+sw_hikey=48
+sw_default=48
+amplitude_oncc100=100
+locc100=1
+pan_oncc101=-100
+#include "modules/controls/erhu_t1_vibrato.sfz"
+
+//Left voice
+//Mono
+
+<master>
+locc105=64
+sw_last=48
+sw_label=Long
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=first
+#include "modules/maps/t1/erhu_sus_map.sfz"
+<master>
+locc105=64
+sw_last=48
+sw_label=Long
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=legato
+offset=15000
+ampeg_attack=0.2
+#include "modules/maps/t1/erhu_sus_map.sfz"
+
+
+<master>
+locc105=64
+sw_last=47
+sw_label=Short
+group=21
+off_by=21
+#include "modules/maps/t1/erhu_stac_map.sfz"
+
+<master>
+locc105=64
+sw_last=46
+sw_label=Marcato
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t1/erhu_sus_map.sfz"
+<master>
+locc105=64
+sw_last=46
+sw_label=Marcato
+group=22
+off_by=22
+ampeg_hold=0.2
+ampeg_decay=0.3
+ampeg_sustain=0
+#include "modules/maps/t1/erhu_stac_map.sfz"
+
+<master>
+locc105=64
+sw_last=45
+sw_label=Sul tasto
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+trigger=first
+#include "modules/maps/t1/erhu_st_map.sfz"
+<master>
+locc105=64
+sw_last=45
+sw_label=Sul tasto
+group=21
+off_by=21
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+trigger=legato
+offset=10000
+ampeg_attack=0.25
+#include "modules/maps/t1/erhu_st_map.sfz"
+
+
+
+
+//Poly
+
+<master>
+hicc105=63
+sw_last=48
+sw_label=Long
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t1/erhu_sus_map.sfz"
+
+
+<master>
+hicc105=63
+sw_last=47
+sw_label=Short
+#include "modules/maps/t1/erhu_stac_map.sfz"
+
+<master>
+hicc105=63
+sw_last=46
+sw_label=Marcato
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t1/erhu_sus_map.sfz"
+<master>
+hicc105=63
+sw_last=46
+sw_label=Marcato
+ampeg_hold=0.2
+ampeg_decay=0.3
+ampeg_sustain=0
+#include "modules/maps/t1/erhu_stac_map.sfz"
+
+<master>
+hicc105=63
+sw_last=45
+sw_label=Sul tasto
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+#include "modules/maps/t1/erhu_st_map.sfz"
+
+
+<global>
+#include "modules/controls/common.sfz"
+sw_lokey=45
+sw_hikey=48
+sw_default=48
+amplitude_oncc100=100
+locc100=1
+pan_oncc101=100
+#include "modules/controls/erhu_t2_vibrato.sfz"
+
+//Right voice
+//Mono
+
+<master>
+locc105=64
+sw_last=48
+sw_label=Long
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=first
+#include "modules/maps/t2/erhu_sus_map.sfz"
+<master>
+locc105=64
+sw_last=48
+sw_label=Long
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+trigger=legato
+offset=15000
+ampeg_attack=0.2
+#include "modules/maps/t2/erhu_sus_map.sfz"
+
+
+<master>
+locc105=64
+sw_last=47
+sw_label=Short
+group=31
+off_by=31
+#include "modules/maps/t2/erhu_stac_map.sfz"
+
+<master>
+locc105=64
+sw_last=46
+sw_label=Marcato
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t2/erhu_sus_map.sfz"
+<master>
+locc105=64
+sw_last=46
+sw_label=Marcato
+group=32
+off_by=32
+ampeg_hold=0.2
+ampeg_decay=0.3
+ampeg_sustain=0
+#include "modules/maps/t2/erhu_stac_map.sfz"
+
+<master>
+locc105=64
+sw_last=45
+sw_label=Sul tasto
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+trigger=first
+#include "modules/maps/t2/erhu_st_map.sfz"
+<master>
+locc105=64
+sw_last=45
+sw_label=Sul tasto
+group=31
+off_by=31
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+trigger=legato
+offset=10000
+ampeg_attack=0.25
+#include "modules/maps/t2/erhu_st_map.sfz"
+
+
+
+
+//Poly
+
+<master>
+hicc105=63
+sw_last=48
+sw_label=Long
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t2/erhu_sus_map.sfz"
+
+
+<master>
+hicc105=63
+sw_last=47
+sw_label=Short
+#include "modules/maps/t2/erhu_stac_map.sfz"
+
+<master>
+hicc105=63
+sw_last=46
+sw_label=Marcato
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+#include "modules/maps/t2/erhu_sus_map.sfz"
+<master>
+hicc105=63
+sw_last=46
+sw_label=Marcato
+ampeg_hold=0.2
+ampeg_decay=0.3
+ampeg_sustain=0
+#include "modules/maps/t2/erhu_stac_map.sfz"
+
+<master>
+hicc105=63
+sw_last=45
+sw_label=Sul tasto
+amplitude_oncc1=100
+amp_veltrack=0
+amplitude_smoothcc1=70
+tune=37
+#include "modules/maps/t2/erhu_st_map.sfz"
+
+
+//Curves
+#include "modules/controls/curves.sfz"

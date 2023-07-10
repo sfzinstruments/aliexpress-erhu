@@ -1,0 +1,45 @@
+//The curves for the mute controls
+<curve>curve_index=7
+v000=0
+v095=1
+v127=1
+
+<curve>curve_index=8
+v000=0
+v095=0.5
+v127=1
+
+//Curves for the hurdygurdy string blend
+
+<curve>
+curve_index=11 //Low string curve
+v000=1
+v064=1
+v127=0
+
+<curve>
+curve_index=12 //High string curve
+v000=0
+v063=1
+v127=1
+
+<curve>
+curve_index=14 //Chordofon płocki piano layer curve
+v000=0
+v063=1
+v127=0
+
+<curve>
+curve_index=15 //Chordofon płocki forte layer curve
+v000=0
+v063=0
+v127=1
+
+<curve>
+curve_index=16 //Octave control curve
+v000=0
+v042=0
+v043=0.5
+v084=0.5
+v085=1
+v127=1
